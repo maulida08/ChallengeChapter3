@@ -30,7 +30,9 @@
         tools:layout="@layout/fragment_three" >
         <action
             android:id="@+id/action_fragmentThree_to_fragmentFour"
-            app:destination="@id/fragmentFour" />
+            app:destination="@id/fragmentFour"
+            app:popUpTo="@id/fragmentThree"
+            app:popUpToInclusive="true"/>
         <argument
             android:name="name"
             app:argType="string" />

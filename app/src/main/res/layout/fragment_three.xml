@@ -17,6 +17,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <ImageView
+        android:id="@+id/dadadada"
+        android:background="@drawable/welcome"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintBottom_toTopOf="@id/btn_fragment_three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+
     <TextView
         android:id="@+id/tv_name"
         android:textSize="20dp"

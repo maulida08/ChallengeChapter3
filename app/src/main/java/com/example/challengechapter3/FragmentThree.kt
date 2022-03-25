@@ -26,7 +26,7 @@ class FragmentThree : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val nameUser = args.name
-        binding.tvName.text = "$nameUser"
+        binding.tvName.text = "Hallo!! $nameUser"
 
         binding.btnFragmentThree.setOnClickListener {
             val aName = FragmentThreeDirections.actionFragmentThreeToFragmentFour(nameUser)
@@ -37,12 +37,13 @@ class FragmentThree : Fragment() {
 
         if (accept != null){
             binding.btnFragmentThree.visibility = View.GONE
+            binding.dadadada.visibility = View.GONE
             val oral = accept.ordoAwal
             val orak = accept.ordoAkhir
             val kaptang = accept.kapTangki
 
             binding.tvInputOrdoawal.text = "Ordometer Awal: $oral"
-            binding.tvInputOrdoakhir.text = "Ordometerk Akhir: $orak"
+            binding.tvInputOrdoakhir.text = "Ordometer Akhir: $orak"
             binding.tvInputKaptangki.text = "Kapasitas Tangki: $kaptang"
 
             val result = (orak-oral)/ 1000 / kaptang
