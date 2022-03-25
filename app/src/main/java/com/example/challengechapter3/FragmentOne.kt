@@ -11,6 +11,7 @@ import com.example.challengechapter3.databinding.FragmentOneBinding
 class FragmentOne : Fragment() {
     private var _binding: FragmentOneBinding? = null
     private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
