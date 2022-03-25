@@ -34,6 +34,9 @@
         <argument
             android:name="name"
             app:argType="string" />
+        <argument
+            android:name="parcelable"
+            app:argType="com.example.challengechapter3.DataParcelable" />
     </fragment>
     <fragment
         android:id="@+id/fragmentFour"
@@ -43,5 +46,8 @@
         <action
             android:id="@+id/action_fragmentFour_to_fragmentThree"
             app:destination="@id/fragmentThree" />
+        <argument
+            android:name="aname"
+            app:argType="string" />
     </fragment>
 </navigation>
