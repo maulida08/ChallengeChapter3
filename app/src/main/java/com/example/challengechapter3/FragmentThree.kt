@@ -32,6 +32,22 @@ class FragmentThree : Fragment() {
             val aName = FragmentThreeDirections.actionFragmentThreeToFragmentFour(nameUser)
             it.findNavController().navigate(aName)
         }
+
+        val accept = args.parcelable
+
+        if (accept != null){
+            binding.btnFragmentThree.visibility = View.GONE
+            val oral = accept.ordoAwal
+            val orak = accept.ordoAkhir
+            val kaptang = accept.kapTangki
+
+            binding.tvInputOrdoawal.text = "Ordometer Awal: $oral"
+            binding.tvInputOrdoakhir.text = "Ordometerk Akhir: $orak"
+            binding.tvInputKaptangki.text = "Kapasitas Tangki: $kaptang"
+
+            val result = (orak-oral)/ 1000 / kaptang
+            binding.tvHasil.text = "Jadi konsumsi BBM kendaraan Anda adalah $result KM/Liter"
+        }
     }
 
 }

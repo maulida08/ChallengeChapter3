@@ -36,7 +36,9 @@
             app:argType="string" />
         <argument
             android:name="parcelable"
-            app:argType="com.example.challengechapter3.DataParcelable" />
+            app:argType="com.example.challengechapter3.DataParcelable"
+            app:nullable="true"
+            android:defaultValue="@null" />
     </fragment>
     <fragment
         android:id="@+id/fragmentFour"
