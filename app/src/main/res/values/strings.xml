@@ -2,4 +2,17 @@
     <string name="app_name">Challenge Chapter 3</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_screen_1">Welcome!!!</string>
+    <string name="text_gts_2">Click Here</string>
+    <string name="text_screen_2">Welcome to My App</string>
+    <string name="input_name">Masukkan Nama</string>
+    <string name="text_gts_3">Continue</string>
+    <string name="text_screen_3">My App</string>
+    <string name="text_gts_4">Next</string>
+    <string name="text_screen_4">Mulai Menghitung</string>
+    <string name="text_result">Result</string>
+    <string name="text_ordometer_awal">Masukkan Ordometer Awal</string>
+    <string name="text_ordometer_akhir">Masukkan Ordometer Akhir</string>
+    <string name="text_kapasitas_tangki">Masukkan Kapasitas Tangki</string>
+
 </resources>
